@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Open at Your Own Risk 😈</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #ff4e50, #f9d423);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(0,0,0,0.35);
+      padding: 40px 30px;
+      border-radius: 20px;
+      max-width: 350px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      animation: pop 1s ease;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+    button {
+      background: #ff2e63;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 30px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff1744;
+      transform: scale(1.05);
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.3rem;
+    }
+
+    .heart {
+      font-size: 2.5rem;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>⚠️ Open at your own risk</h1>
+    <p>
+      Warning:  
+      This page may cause smiling, blushing,  
+      and thinking about <strong>MANU</strong> nonstop 😌
+    </p>
+
+    <button onclick="reveal()">I’m ready 👀</button>
+
+    <div id="secret" class="hidden">
+      <p>
+        Hey <strong>MANU</strong> 💖  
+        <br><br>
+        You’re officially someone  
+        who makes days better  
+        without even trying.
+      </p>
+      <div class="heart">❤️</div>
+    </div>
+  </div>
+
+  <script>
+    function reveal() {
+      document.getElementById("secret").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
